@@ -1,0 +1,172 @@
+n=30, elite=10,t=10, gens=8
+The scores are for Script27 -> [52, 33] and for Script700015 -> [48, 67]
+
+n=20, elite=7,t=7, gens=6
+The scores are for Script4 -> [63, 43] and for Script50004 -> [37, 57]
+
+n=10, elite=7,t=5, gens=4
+The scores are for Script7 -> [67, 38] and for Script8 -> [33, 62]
+
+
+
+
+
+
+The scores are for Script4 -> [47, 39] and for Script4 -> [53, 61]
+
+
+
+The scores are for Script4 -> [61, 43] and for Script4 -> [39, 57]
+
+
+Run
+
+
+Run0-----------------------
+The scores are for Script10 -> [54, 35] and for Script500012 -> [46, 65]-----------------------
+
+
+Run1-----------------------
+The scores are for Script10 -> [58, 38] and for Script500012 -> [42, 62]-----------------------
+
+
+Run2-----------------------
+The scores are for Script10 -> [65, 42] and for Script500012 -> [35, 58]-----------------------
+
+
+Run020 7 7 6-----------------------
+The scores are for Script19 -> [62, 33] and for Script50005 -> [38, 67]-----------------------
+
+
+Run120 7 7 6-----------------------
+The scores are for Script19 -> [52, 42] and for Script50005 -> [48, 58]-----------------------
+
+
+Run220 7 7 6-----------------------
+The scores are for Script19 -> [56, 35] and for Script50005 -> [44, 65]-----------------------
+
+
+Run030 10 10 8
+-----------------------
+The scores are for Script21 -> [56, 48] and for Script70006 -> [44, 52]
+-----------------------
+
+
+Run130 10 10 8
+-----------------------
+The scores are for Script21 -> [70, 44] and for Script70006 -> [30, 56]
+-----------------------
+
+
+Run230 10 10 8
+-----------------------
+The scores are for Script21 -> [64, 53] and for Script70006 -> [36, 47]
+-----------------------
+
+
+Run010,7,5,4
+-----------------------
+The scores are for Script6 -> [62, 31] and for Script6 -> [38, 69]
+-----------------------
+
+
+Run110,7,5,4
+-----------------------
+The scores are for Script6 -> [67, 41] and for Script6 -> [33, 59]
+-----------------------
+
+
+Run210,7,5,4
+-----------------------
+The scores are for Script6 -> [64, 37] and for Script6 -> [36, 63]
+-----------------------
+
+
+Run010,7,5,4
+-----------------------
+The scores are for Script3 -> [59, 35] and for Script3 -> [41, 65]
+-----------------------
+
+
+Run110,7,5,4
+-----------------------
+The scores are for Script3 -> [48, 33] and for Script3 -> [52, 67]
+-----------------------
+
+
+Run210,7,5,4
+-----------------------
+The scores are for Script3 -> [53, 41] and for Script3 -> [47, 59]
+-----------------------
+
+
+Run010,7,5,4
+-----------------------
+The scores are for Script6 -> [58, 31] and for Script6 -> [42, 69]
+-----------------------
+
+
+Run110,7,5,4
+-----------------------
+The scores are for Script6 -> [68, 40] and for Script6 -> [32, 60]
+-----------------------
+
+
+Run210,7,5,4
+-----------------------
+The scores are for Script6 -> [67, 33] and for Script6 -> [33, 67]
+-----------------------
+
+
+Run010,7,5,4
+-----------------------
+The scores are for Script0 -> [58, 36] and for Script0 -> [42, 64]
+-----------------------
+
+
+Run110,7,5,4
+-----------------------
+The scores are for Script0 -> [64, 43] and for Script0 -> [36, 57]
+-----------------------
+
+
+Run210,7,5,4
+-----------------------
+The scores are for Script0 -> [55, 40] and for Script0 -> [45, 60]
+-----------------------
+
+
+Run010,7,5,4
+-----------------------
+The scores are for Script8 -> [6, 3] and for Script30003 -> [94, 95]
+-----------------------
+
+
+Run110,7,5,4
+-----------------------
+The scores are for Script8 -> [6, 6] and for Script30003 -> [94, 93]
+-----------------------
+
+
+Run210,7,5,4
+-----------------------
+The scores are for Script8 -> [6, 3] and for Script30003 -> [94, 96]
+-----------------------
+
+
+Run010,7,5,4
+-----------------------
+The scores are for Script6 -> [61, 38] and for Script6 -> [39, 62]
+-----------------------
+
+
+Run110,7,5,4
+-----------------------
+The scores are for Script6 -> [52, 46] and for Script6 -> [48, 54]
+-----------------------
+
+
+Run210,7,5,4
+-----------------------
+The scores are for Script6 -> [61, 40] and for Script6 -> [39, 60]
+-----------------------
