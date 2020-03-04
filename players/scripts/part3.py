@@ -18,84 +18,13 @@ class PlayerPart3():
         for i in range(n):
             rules = synth.synthesize()
             script = Script(rules=rules, id=i)
-            # print(script._rules)
             self.script_rules[i] = script.getRules()
             script.saveFile(path=path)
             player_scripts.append(path+"Script"+str(i)+".py")
         return player_scripts
 
 
-def evaluate(p = None):
-    if p==None:
-        raise Exception()
-    # Find out pairs of scripts.
-    # Create a list to store the scores of each player.
-    scores = [0 for temp in range(len(p))]
-    for i in range(len(p)):
-        for j in range(len(p)):
-            if i!=j:
-                # print("Scripts playing -> ", i, j)
-                player1_script = import_module('players.scripts.Script'+str(i))
-                player2_script = import_module('players.scripts.Script'+str(j))
-                player1_class = getattr(player1_script, 'Script' + str(i))
-                player2_class = getattr(player2_script, 'Script' + str(j))
-                player1 = player1_class()
-                player2 = player2_class()
-                victories1 = 0
-                victories2 = 0
-                for _ in range(20):
-                    game = Game(n_players=2, dice_number=4, dice_value=3, column_range=[2, 6],
-                                offset=2, initial_height=1)
 
-                    is_over = False
-                    who_won = None
-
-                    number_of_moves = 0
-                    current_player = game.player_turn
-                    while not is_over:
-                        moves = game.available_moves()
-                        if game.is_player_busted(moves):
-                            if current_player == 1:
-                                current_player = 2
-                            else:
-                                current_player = 1
-                            continue
-                        else:
-                            if game.player_turn == 1:
-                                chosen_play = player1.get_action(game)
-                            else:
-                                chosen_play = player2.get_action(game)
-                            if chosen_play == 'n':
-                                if current_player == 1:
-                                    current_player = 2
-                                else:
-                                    current_player = 1
-                            print('Chose: ', chosen_play)
-                            game.print_board()
-                            game.play(chosen_play)
-                            game.print_board()
-                            number_of_moves += 1
-
-                            print()
-                        who_won, is_over = game.is_finished()
-
-                        if number_of_moves >= 200:
-                            is_over = True
-                            who_won = -1
-                            print('No Winner!')
-
-                    if who_won == 1:
-                        victories1 += 1
-                        scores[i] += victories1
-                    if who_won == 2:
-                        victories2 += 1
-                        scores[j] += victories2
-                print(victories1, victories2)
-
-
-                # print('Player 1: ', victories1 / (victories1 + victories2))
-                # print('Player 2: ', victories2 / (victories1 + victories2))
-    return scores
 
 
 def evaluate_gens(p=None):
@@ -104,7 +33,6 @@ def evaluate_gens(p=None):
         raise Exception()
     # The set p contains the id of the scripts.
     # Create a list to store the scores of each player.
-    print("The p after generations is ->", p)
     scores = [0 for temp in range(len(p))]
     # The range(len(p)) will return a list with the indexes of p. Eg. if p=[1,2,30001]
     # then i and j will have values in [0,1,2].
@@ -149,6 +77,7 @@ def evaluate_gens(p=None):
                                     current_player = 2
                                 else:
                                     current_player = 1
+                            # These lines are commented out for a cleaner console.
                             # print('Chose: ', chosen_play)
                             # game.print_board()
                             game.play(chosen_play)
@@ -171,7 +100,6 @@ def evaluate_gens(p=None):
                         scores[j] += victories2
                 rules_counter[i] = player1.get_counter_calls()
                 rules_counter[j] = player2.get_counter_calls()
-                print(victories1, victories2)
                 # rules_counter[i] = player1.get_counter_calls()
                 # rules_counter[j] = player2.get_counter_calls()
                 # print('Player 1: ', victories1 / (victories1 + victories2))
@@ -250,21 +178,15 @@ def remove_unused_rules(plys, players_rules, rules_counter):
     new_rules = {}
     for sn in range(len(players)):
         rule_count = rules_counter[sn] # rule_count holds a list.
-        print("Printing rule count for script id ", sn, " -> ", rule_count)
-        print(players_rules)
         temp_new_rules = []
         list_index = [i for i in range(len(rule_count))]
         # list_index = list_index[::-1]
         for c in list_index:
             prpsn_len = len(players_rules[players[sn]])
             if rule_count[c] > 0:
-                print("hooli")
-                print((players_rules[players[sn]]))
-                print("c is ", c)
                 if c < prpsn_len:
                     temp_new_rules.append(players_rules[players[sn]][c])
         new_rules[players[sn]] = temp_new_rules
-        print("Script_id->", players[sn], " -> ", temp_new_rules)
         final_rules = []
         for new_rule in temp_new_rules:
             if new_rule not in final_rules:
@@ -280,9 +202,7 @@ def EZS(gens=5, n=10, elite=4, t=4, mutate_rate=0.5):
     generation_fitness_values = [] # This will hold the fitness values for the scripts in each generation (The scripts may not be the same).
     part3 = PlayerPart3()
     player_scripts = part3.get_scripts(n=n) # Initialize population of scripts.
-    print(player_scripts)
     players = [int(i) for i in range(len(player_scripts))]
-    print("player ids", players)
     c_id = ""
     # players_indexes = [int(script_id) for script_id in player_scripts]
     gen_fitness = None
@@ -293,9 +213,6 @@ def EZS(gens=5, n=10, elite=4, t=4, mutate_rate=0.5):
         # Evaluate(P) where P is players. Note that the list 'players' contains the id of scripts.
         fitness_values, rules_counter = evaluate_gens(players)
         generation_fitness_values.append(fitness_values)
-        print("Rules counter->", rules_counter)
-        print(part3.script_rules)
-        # return
         """
         'players' is the collection of script ids after each generation
         'rules_counter' is the value of 'get_counter_calls'
@@ -306,9 +223,7 @@ def EZS(gens=5, n=10, elite=4, t=4, mutate_rate=0.5):
         for key in updated_rules.keys():
             part3.script_rules[key] = updated_rules[key]
 
-        print("Player scores-> at generation",_," is ", fitness_values)
         elite_indexes = elite_scripts(fitness_values, elite)
-        print("Elite indexes-> ", elite_indexes)
         p_prime = set()
         p_prime = p_prime.union(elite_indexes)
         while len(p_prime) < len(players):
@@ -318,35 +233,21 @@ def EZS(gens=5, n=10, elite=4, t=4, mutate_rate=0.5):
             # Here the fitness values are used to randomly select some scripts.
             # First I randomly select the scripts based on the fitness
             p1, p2 = tournament(fitness_values, t)
-            # This section imports the respectives scripts for getting the split.
-            # player1_script = import_module('players.scripts.Script' + str(p1))
-            # player2_script = import_module('players.scripts.Script' + str(p2))
-            # player1_class = getattr(player1_script, 'Script' + str(p1))
-            # player2_class = getattr(player2_script, 'Script' + str(p2))
-            # parent1 = player1_class()
-            # parent2 = player2_class()
-            print(part3.script_rules)
             # 'c' contains the rules after crossover from the parents.
             c = crossover(part3.script_rules[p1], part3.script_rules[p2])
             # Now the mutate operation
             # c_mutated contains the mutated rules with the id=int(c_id)
             c_mutated = mutate(c, mutate_rate, id=int(c_id))
             part3.script_rules[int(c_id)] = c_mutated
-            print("Script rules new", part3.script_rules)
-            # return
             # Insert the mutated script id into p_prime
             p_prime = p_prime.union([int(c_id)])
-            # print("P_prime->", p_prime)
 
         players = p_prime
-        print("Generation ", _, " ", p_prime)
 
         # The following line is added to remove the __pycache__ file to avoid conflicts.
     # shutil.rmtree("C:\\Users\\Rohan\\Desktop\\Coursework\\Winter 2020\\CMPUT 659\\Assignment 1\\cant-stop-assignment\\__pycache__")
 
-    print("The final generation is", players)
     gen_fitness, rules_counter = evaluate_gens(players)
-    print("Generation fitness", gen_fitness)
     players = list(players)
         # Reusing the elite_scripts method to get the best script.
     # inds = [i for _, i in sorted(zip(gen_fitness, final_indexes), reverse=True)]
@@ -535,10 +436,12 @@ def compare_user_scripts(best_script_id):
 
 
 # 'generation_fitness_values' contains the fitness values for each generation.
+# The values for the parameters can be changed here.
 generation_fitness_values, best_script_id = EZS(n=10, elite=7,t=5, gens=4)
 
 
-# Now the best_script will be compared to the initial generation.
+# Now the best_script will be compared to the initial generation. The games are
+# played 3 times just to observe scores.
 for i in range(3):
     first_gen_best_script, scores1, scores2 = compare_scripts(generation_fitness_values[0], best_script_id)
     print("The scores are for Script", first_gen_best_script, " -> ", scores1, " and for Script", best_script_id," -> ", scores2)

@@ -5,6 +5,8 @@ import numpy as np
 class PlayerTest(Player):
 
     """
+    This file contains a highly sophisticated script containing
+    nested conditions.
     I will also try to add a chance where with a low
     probability, the test player will choose one of
     the extreme columns but most of the time will choose
@@ -16,7 +18,6 @@ class PlayerTest(Player):
     """
     def get_action(self, state):
         actions = state.available_moves()
-        print("Actions: ", actions)
         for a in actions:
             if DSL.actionWinsColumn(state, a):
                 return a

@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f95a295e-d364-4872-ae05-631715965dd5" name="Default Changelist" comment="" />
+    <list default="true" id="f95a295e-d364-4872-ae05-631715965dd5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-xai.py" beforeDir="false" afterPath="$PROJECT_DIR$/main-xai.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script0.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script1.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script10.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script10001.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script10001.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script10002.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script10002.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script10003.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script10003.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script2.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script20001.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script20001.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script20003.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script20003.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script30001.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script30001.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script30002.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script30002.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script30003.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script30003.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script4.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script5.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script6.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script7.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script8.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script8.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/Script9.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/Script9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/part3.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/part3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/scripts/player_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/scripts/player_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_best_users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results_best_users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_gen_best.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results_gen_best.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +40,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YVIX435mqw873PdaGlbzjOf9iM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -90,8 +120,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python.part3" />
       <item itemvalue="Python.main-xai" />
+      <item itemvalue="Python.part3" />
     </list>
     <recent_temporary>
       <list>
@@ -138,10 +168,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583277139186" />
-    <state x="477" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1583254179491">
+    <state x="477" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1583298276739">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="477" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583254179491" />
+    <state x="477" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583298276739" />
     <state x="416" y="30" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583221515485">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

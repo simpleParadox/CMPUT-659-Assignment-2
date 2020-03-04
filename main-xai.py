@@ -12,8 +12,8 @@ from  players.scripts.LinearPlayer import LinearPlayer
 # from players.scripts.Script30003 import Script30003
 if __name__ == "__main__":    
     
-    # random = Script8()
-    # test = Script30003()
+    random = PlayerRandom()
+    test = PlayerTest()
     
     victories1 = 0
     victories2 = 0

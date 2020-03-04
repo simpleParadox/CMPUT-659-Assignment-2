@@ -121,9 +121,8 @@ class Script{0}(Player):
 
         for i in range(number_rules):
             if self._rules[i] == []:
-                # You can also change 'False' to 'True' and see what happens in the experiment.
+                # You can also toggle between 'False' and 'True' and see what happens in the experiment.
                 self._rules[i].append('True')
-            # print('self.rules updated', self._rules[i][0])
             py += self._if_string.format(self._rules[i][0], i)
         py += self._end_script
         
