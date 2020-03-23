@@ -182,3 +182,21 @@ Run210,7,5,4
 -----------------------
 The scores are for Script30002 -> [60, 41] and for Script LinearPlayer -> [40, 59]
 -----------------------
+
+
+Run010,7,5,4
+-----------------------
+The scores are for Script30003 -> [56, 31] and for Script LinearPlayer -> [44, 69]
+-----------------------
+
+
+Run110,7,5,4
+-----------------------
+The scores are for Script30003 -> [57, 36] and for Script LinearPlayer -> [43, 64]
+-----------------------
+
+
+Run210,7,5,4
+-----------------------
+The scores are for Script30003 -> [55, 33] and for Script LinearPlayer -> [45, 67]
+-----------------------

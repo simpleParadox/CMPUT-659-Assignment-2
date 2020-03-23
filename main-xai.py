@@ -5,15 +5,22 @@ import collections
 from game import Board, Game
 from players.scripts.player_test import PlayerTest
 from players.scripts.player_random import PlayerRandom
+from players.scripts.vanilla_uct_player import Vanilla_UCT # Use this to replace the players.
 from players.scripts.DSL import DSL
 import sys
+from copy import deepcopy
 from  players.scripts.LinearPlayer import LinearPlayer
-# from players.scripts.Script8 import Script8
-# from players.scripts.Script30003 import Script30003
-if __name__ == "__main__":    
-    
-    random = PlayerRandom()
-    test = PlayerTest()
+from players.scripts.Script104 import Script104
+from players.scripts.Script20923 import Script20923
+if __name__ == "__main__":
+
+    # 'random' is player 1
+    # 'test' is player 2
+
+    # training_data = []
+
+    test = LinearPlayer()
+    random = Script104()
     
     victories1 = 0
     victories2 = 0
@@ -37,17 +44,20 @@ if __name__ == "__main__":
             else:
                 if game.player_turn == 1:
                     chosen_play = random.get_action(game)
+                    # data_pair = [deepcopy(game), chosen_play]
                 else:
                     chosen_play = test.get_action(game)
+                    # data_pair = [deepcopy(game), chosen_play]
+                # training_data.append(data_pair)
                 if chosen_play == 'n':
                     if current_player == 1:
                         current_player = 2
                     else:
                         current_player = 1
-                print('Chose: ', chosen_play)
-                game.print_board()
+                # print('Chose: ', chosen_play)
+                # game.print_board()
                 game.play(chosen_play)
-                game.print_board()
+                # game.print_board()
                 number_of_moves += 1
                 
                 print()
@@ -62,6 +72,8 @@ if __name__ == "__main__":
             victories1 += 1
         if who_won == 2:
             victories2 += 1
-    print(victories1, victories2)
-    print('Player 1: ', victories1 / (victories1 + victories2))
-    print('Player 2: ', victories2 / (victories1 + victories2))
+    # print(training_data)
+    print("Scores", victories1, victories2)
+    # print('Player 1: ', victories1 / (victories1 + victories2))
+    # print('Player 2: ', victories2 / (victories1 + victories2))
+

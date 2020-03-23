@@ -1,0 +1,255 @@
+Run 0 -> {'DSL.hasWonColumn(state,a) and DSL.isStopAction(a)', 'DSL.isStopAction(a) and DSL.hasWonColumn(state,a)'}
+
+
+
+
+Run 1 -> {'DSL.containsNumber(a, 4 )', 'DSL.containsNumber(a, 4 ) and DSL.containsNumber(a, 4 )'}
+
+
+
+
+Run 2 -> {'DSL.isStopAction(a) and DSL.isStopAction(a)', 'DSL.isStopAction(a)'}
+
+
+
+
+Run 3 -> {'DSL.containsNumber(a, 3 )', 'DSL.containsNumber(a, 3 ) and DSL.containsNumber(a, 3 )'}
+
+
+
+
+Run 4 -> {'DSL.containsNumber(a, 2 )'}
+
+
+
+
+Run 0 -> {'DSL.isStopAction(a) and DSL.numberPositionsProgressedThisRoundColumn(state, 5 ) > 1 and DSL.isStopAction(a)', 'DSL.numberPositionsProgressedThisRoundColumn(state, 5 ) > 1 and DSL.isStopAction(a)'}
+
+
+
+
+Run 1 -> {'DSL.isStopAction(a) and DSL.isStopAction(a)', 'DSL.containsNumber(a, 3 )', 'DSL.isStopAction(a)'}
+
+
+
+
+Run 2 -> {'DSL.containsNumber(a, 4 )', 'DSL.containsNumber(a, 4 ) and DSL.containsNumber(a, 4 )'}
+
+
+
+
+Run 3 -> {'DSL.containsNumber(a, 5 ) and DSL.containsNumber(a, 5 )', 'DSL.containsNumber(a, 5 )'}
+
+
+
+
+Run 4 -> {'DSL.containsNumber(a, 3 )'}
+
+
+
+
+Run 0 -> {'DSL.hasWonColumn(state,a) and DSL.numberPositionsProgressedThisRoundColumn(state, 4 ) > 1 and DSL.isStopAction(a)', 'DSL.containsNumber(a, 6 )', 'DSL.containsNumber(a, 6 ) and DSL.containsNumber(a, 6 )', 'DSL.numberPositionsProgressedThisRoundColumn(state, 4 ) > 1 and DSL.isStopAction(a) and DSL.hasWonColumn(state,a)'}
+
+
+
+
+Run 1 -> {'DSL.isStopAction(a) and DSL.isStopAction(a)', 'DSL.isStopAction(a)'}
+
+
+
+
+Run 2 -> {'DSL.containsNumber(a, 5 )'}
+
+
+
+
+Run 3 -> {'DSL.containsNumber(a, 4 )'}
+
+
+
+
+Run 4 -> {'DSL.containsNumber(a, 3 )'}
+
+
+
+
+Run 0 -> {'DSL.isStopAction(a) and DSL.hasWonColumn(state,a)', 'DSL.hasWonColumn(state,a) and DSL.isStopAction(a)'}
+
+
+
+
+Run 0 -> {'DSL.containsNumber(a, 3 )', 'DSL.containsNumber(a, 3 ) and DSL.containsNumber(a, 3 )'}
+
+
+
+
+Run 1 -> {'DSL.numberPositionsProgressedThisRoundColumn(state, 4 ) > 1 and DSL.isStopAction(a)', 'DSL.isStopAction(a) and DSL.isStopAction(a)', 'DSL.numberPositionsConquered(state, 3 ) > 2 and DSL.containsNumber(a, 6 )', 'DSL.isStopAction(a) and DSL.containsNumber(a, 4 )', 'DSL.isStopAction(a)', 'DSL.numberPositionsConquered(state, 2 ) > 2 and DSL.containsNumber(a, 6 )', 'DSL.actionWinsColumn(state,a)'}
+
+
+
+
+Run 2 -> {'DSL.containsNumber(a, 4 )'}
+
+
+
+
+Run 3 -> {'DSL.containsNumber(a, 5 )'}
+
+
+
+
+Run 4 -> {'DSL.hasWonColumn(state,a)', 'DSL.containsNumber(a, 2 )'}
+
+
+
+
+Run 0 -> {'DSL.containsNumber(a, 6 )'}
+
+
+
+
+Run 1 -> {'DSL.isStopAction(a) and DSL.isStopAction(a)', 'DSL.isStopAction(a)'}
+
+
+
+
+Run 2 -> {'DSL.containsNumber(a, 5 )'}
+
+
+
+
+Run 3 -> {'DSL.isDoubles(a) and DSL.hasWonColumn(state,a)', 'DSL.containsNumber(a, 4 )'}
+
+
+
+
+Run 4 -> {'DSL.containsNumber(a, 3 )'}
+
+
+
+
+Run 0 -> {'DSL.hasWonColumn(state,a) and DSL.isStopAction(a)', 'DSL.isStopAction(a) and DSL.hasWonColumn(state,a)'}
+
+
+
+
+Run 1 -> {'DSL.containsNumber(a, 4 )'}
+
+
+
+
+Run 2 -> {'DSL.isStopAction(a) and DSL.isStopAction(a)', 'DSL.isStopAction(a)'}
+
+
+
+
+Run 3 -> {'DSL.containsNumber(a, 3 )'}
+
+
+
+
+Run 4 -> {'DSL.containsNumber(a, 2 )'}
+
+
+
+
+Run 0 -> {'DSL.isStopAction(a) and DSL.hasWonColumn(state,a)', 'DSL.hasWonColumn(state,a) and DSL.isStopAction(a)'}
+
+
+
+
+Run 1 -> {'DSL.containsNumber(a, 3 )'}
+
+
+
+
+Run 2 -> {'DSL.isStopAction(a) and DSL.isStopAction(a)', 'DSL.isStopAction(a)'}
+
+
+
+
+Run 3 -> {'DSL.containsNumber(a, 4 )'}
+
+
+
+
+Run 4 -> {'DSL.containsNumber(a, 2 )', 'DSL.containsNumber(a, 2 ) and DSL.containsNumber(a, 2 )'}
+
+
+
+
+Run 0 -> {'DSL.containsNumber(a, 2 ) and DSL.containsNumber(a, 2 )', 'DSL.containsNumber(a, 2 )'}
+
+
+
+
+Run 1 -> {'DSL.isStopAction(a)', 'DSL.isStopAction(a) and DSL.isStopAction(a)'}
+
+
+
+
+Run 2 -> {'DSL.containsNumber(a, 4 )'}
+
+
+
+
+Run 3 -> {'DSL.containsNumber(a, 3 )', 'DSL.numberPositionsProgressedThisRoundColumn(state, 5 ) > 2 and DSL.isStopAction(a) and DSL.actionWinsColumn(state,a)'}
+
+
+
+
+Run 4 -> {'DSL.containsNumber(a, 5 )', 'DSL.containsNumber(a, 5 ) and DSL.containsNumber(a, 5 )'}
+
+
+
+
+Run 0 -> {'DSL.hasWonColumn(state,a) and DSL.isStopAction(a)', 'DSL.isStopAction(a) and DSL.hasWonColumn(state,a)'}
+
+
+
+
+Run 1 -> {'DSL.containsNumber(a, 3 )'}
+
+
+
+
+Run 2 -> {'DSL.isStopAction(a) and DSL.isStopAction(a)', 'DSL.isStopAction(a)'}
+
+
+
+
+Run 3 -> {'DSL.containsNumber(a, 4 )'}
+
+
+
+
+Run 4 -> {'DSL.containsNumber(a, 5 )'}
+
+
+
+
+Run 0 -> {'DSL.containsNumber(a, 6 ) and DSL.containsNumber(a, 6 )', 'DSL.containsNumber(a, 6 )'}
+
+
+
+
+Run 1 -> {'DSL.isStopAction(a) and DSL.isStopAction(a)', 'DSL.isStopAction(a)'}
+
+
+
+
+Run 2 -> {'DSL.containsNumber(a, 4 )', 'DSL.containsNumber(a, 4 ) and DSL.containsNumber(a, 4 )'}
+
+
+
+
+Run 3 -> {'DSL.containsNumber(a, 5 )'}
+
+
+
+
+Run 4 -> {'DSL.numberPositionsConquered(state, 2 ) > 1 and DSL.containsNumber(a, 6 )', 'DSL.containsNumber(a, 3 )', 'DSL.containsNumber(a, 3 ) and DSL.containsNumber(a, 3 )'}
+
+
+
+

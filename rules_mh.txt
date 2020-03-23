@@ -1,0 +1,33 @@
+[containsNumber(a, 6 )]
+[isStopAction(a)]
+[containsNumber(a, 5 )]
+[containsNumber(a, 4 )]
+[containsNumber(a, 3 )]
+
+
+[isStopAction(a) and DSL.hasWonColumn(state,a)]
+[isStopAction(a)]
+[containsNumber(a, 4 )]
+[containsNumber(a, 3 )]
+[containsNumber(a, 2 )]
+
+
+DSL.hasWonColumn(state,a) and DSL.isStopAction(a)
+DSL.isStopAction(a) and DSL.isStopAction(a)
+DSL.containsNumber(a, 3 )
+DSL.containsNumber(a, 4 )
+DSL.containsNumber(a, 5 )
+
+
+DSL.isStopAction(a) and DSL.hasWonColumn(state,a)
+DSL.isStopAction(a)
+DSL.containsNumber(a, 4 )
+DSL.containsNumber(a, 3 )
+DSL.containsNumber(a, 5 )
+
+
+[hasWonColumn(state,a),isStopAction(a)]
+[containsNumber(a, 3 )]
+[isStopAction(a)]
+[containsNumber(a, 4 )]
+[containsNumber(a, 5 )]

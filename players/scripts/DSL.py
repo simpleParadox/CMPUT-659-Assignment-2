@@ -2,6 +2,7 @@ import copy
 import random
 from players.scripts.Script import Script
 
+
 class DSL:
     
     def __init__(self):
