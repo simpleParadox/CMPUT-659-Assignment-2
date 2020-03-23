@@ -1,2 +1,3 @@
-# cant-stop
-Python implementation of the board game "Can't Stop".
+Assignment 2 CMPUT 659
+
+Run the project by executing the file 'mh.py'.
